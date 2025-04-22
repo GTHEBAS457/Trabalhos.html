@@ -13,64 +13,64 @@
                     .header{
                     width:inherit;
                     height:100px;
-                    background-color:;
+                    background-color:blue;
                     }
                     .header1{
                     width:25%;
                     height:inherit;
-                    background-color:olivedrab;
+                    background-color:rgb(35, 46, 142);
                     display:inline-block;
                     float:right;
                     }
                     .header2{
                     width:25%;
                     height:inherit;
-                    background-color:rgb(3, 95, 3);
+                    background-color:rgb(6, 78, 6);
                     display:inline-block;
                     float:right;
                     }
                     .header3{
                     width:25%;
                     height:inherit;
-                    background-color:rgb(13, 121, 13);
+                    background-color:rgb(72, 68, 122);
                     display:inline-block;
                     float:right;
                     }
                     .header4{
                     width:25%;
                     height:inherit;
-                    background-color:olivedrab;
+                    background-color:rgb(153, 219, 20);
                     display:inline-block;
                     float:right;
                     }
                     .main{
                     width:inherit;
                     height:350px;
-                    background-color:#00BFFF ;
+                    background-color:#18a5d4 ;
                     }
                     .footer{
                     width:inherit;
                     height:110px;
-                    background-color:#B0C4DE ;
+                    background-color:#000000 ;
                     }
                     .footer1{
                     width:33.3333333333%;
                     height:inherit;
-                    background-color:olivedrab;
+                    background-color:rgb(11, 212, 118);
                     display:inline-block;
                     float:right;
                     }
                     .footer2{
                     width:33.3333333333%;
                     height:inherit;
-                    background-color:rgb(17, 128, 17);
+                    background-color:rgb(138, 19, 185);
                     display:inline-block;
                     float:right;
                     }
                     .footer3{
                     width:33.3333333333%;
                     height:inherit;
-                    background-color:olivedrab;
+                    background-color:rgb(123, 13, 197);
                     display:inline-block;
                     float:right;
                     }
@@ -79,29 +79,29 @@
                     height:inherit;
                     display:inline-block;
                     float:right;
-                    background-color:#87CEFA;
+                    background-color:#bd17d3;
                     }
                     .esquerda1{
                     width:inherit;
                     height:33.3333333333%;
-                    background-color:yellowgreen;
+                    background-color:rgb(35, 49, 7);
                     }
                     .esquerda2{
                     width:inherit;
                     height:33.3333333333%;
-                    background-color:rgb(135, 180, 43);
+                    background-color:rgb(207, 33, 27);
                     }
                     .esquerda3{
                     width:inherit;
                     height:33.3333333333%;
-                    background-color:yellowgreen;
+                    background-color:rgb(90, 41, 49);
                     }
                     .centro{
                     width:600px;
                     height:inherit;
                     display:inline-block;
                     float:right;
-                    background-color:#202020;
+                    background-color:#4e0000;
                     }
                     .centro1{
                     width:inherit;
@@ -111,14 +111,14 @@
                     .centroA{
                     width:50%;
                     height:inherit;
-                    background-color:rgb(29, 146, 19);
+                    background-color:rgb(20, 0, 94);
                     display:inline-block;
                     float:right;
                     }
                     .centroB{
                     width:50%;
                     height:inherit;
-                    background-color:rgb(36, 156, 25);
+                    background-color:rgb(39, 52, 63);
                     display:inline-block;
                     float:right;
                     }
@@ -132,21 +132,21 @@
                     .centroC{
                     width:33.3333333333%;
                     height:inherit;
-                    background-color:rgb(38, 167, 33);
+                    background-color:rgb(61, 155, 58);
                     display:inline-block;
                     float:right;
                     }
                     .centroD{
                     width:33.3333333333%;
                     height:inherit;
-                    background-color:rgb(25, 158, 31);
+                    background-color:rgb(14, 59, 117);
                     display:inline-block;
                     float:right;
                     }
                     .centroE{
                     width:33.3333333333%;
                     height:inherit;
-                    background-color:rgb(21, 151, 27);
+                    background-color:rgb(134, 185, 14);
                     display:inline-block;
                     float:right;
                     }
@@ -162,14 +162,14 @@
                     height:50%;
                     display:inline-block;
                     float:right;
-                    background-color:rgb(135, 180, 43);
+                    background-color:rgb(139, 207, 4);
                     }
                     .direita2{
                     width:inherit;
                     height:50%;
                     display:inline-block;
                     float:right;
-                    background-color: yellowgreen;
+                    background-color: rgb(184, 4, 169);
                     }
                     </style>
                 </head>

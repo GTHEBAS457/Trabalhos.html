@@ -1,1 +1,310 @@
-trab
+<!DOCTYPE html>
+<html lang="PT-BR">
+    <head>
+        <title></title>
+        <link rel="stylesheet" type="text/css" href="">
+        <meta charset="utf-8">
+        <script src="jquery.js"></script>
+        <style>
+            .site{
+            width:1000px;
+            height:700px;
+            background-color:rgb(19, 19, 255);
+            }
+            .um{
+            width:inherit;
+            height:30px;
+            background-color:rgb(38, 38, 255);
+            }
+            .dois{
+            width: 1000px;
+            height:100px;
+            background-color:rgb(58, 58, 255);
+            }
+            .tres{
+            width:inherit;
+            height:30px;
+            background-color:rgb(78, 78, 255);
+            }
+            .quatro{
+            width:inherit;
+            height:450px;
+            background-color:rgb(98, 98, 255);
+            background-image:url(https://portalplural.com.br/wp-content/uploads/2021/11/lua-astronauta-1000x450-1.png.webp);
+            }
+            .cinco{
+            width:inherit;
+            height:30px;
+            background-color:rgb(118, 118, 255);
+            }
+            .seis{
+            width:inherit;
+            height:30px;
+            background-color:rgb(138, 138, 255);
+            }
+            .sete{
+            width:inherit;
+            height:30px;
+            background-color:rgb(158, 158, 255);
+            }
+            .um1{
+            width:10%;
+            height:inherit;
+            background-color:blue;
+            display:inline-block;
+            float:left;
+            }
+            .um2{
+            width:10%;
+            height:inherit;
+            background-color:rgb(31, 31, 253);
+            display:inline-block;
+            float:right;
+            }
+            .um3{
+            width:80%;
+            height:inherit;
+            background-color:rgb(48, 48, 255);
+            display:inline-block;
+            float:right;
+            }
+            .dois1{
+            width:10%;
+            height:inherit;
+            background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTplxe6wXHQDGtPk-trn0pLfX8GDjHELSnMQ&s);
+            display:inline-block;
+            float:left;
+            border-radius:100%;
+            margin-left:1%;
+            background-size:100%;
+            }
+            .dois2{
+            width:10%;
+            height:inherit;
+            background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4ldJSZbDLpoObRR2Ans2NtYseNdWvgYeNMg&s);
+            display:inline-block;
+            float:left;
+            border-radius:100%;
+            margin-left:1%;
+            background-size:100%;
+            }
+            .dois3{
+            width:10%;
+            height:inherit;
+            background-image:url(https://i.pinimg.com/736x/84/74/61/84746141518ff08cb0498d47df8de43c.jpg);
+            display:inline-block;
+            float:left;
+            border-radius:100%;
+            margin-left:1%;
+            background-size:100%;
+            }
+            .dois4{
+            width:10%;
+            height:inherit;
+            background-image:url(https://img.cdndsgni.com/preview/10073442.jpg);
+            display:inline-block;
+            float:left;
+            border-radius:100%;
+            margin-left:1%;
+            background-size:100%;
+            }
+            .dois5{
+            width:10%;
+            height:inherit;
+            background-image:url(https://campovivo.com.br/wp-content/uploads/2019/07/WhatsApp-Image-2018-06-28-at-19.05.44.jpeg);
+            display:inline-block;
+            float:left;
+            border-radius:100%;
+            margin-left:1%;
+            background-size:100%;
+            }
+            .tres1{
+            width:3%;
+            height:inherit;
+            background-image:url(https://www.logotypes101.com/logos/733/0F78B6B24190F2478E917BA3AE277C16/parana_clube.png);
+            display:inline-block;
+            float:left;
+            border-radius:100%;
+            background-size:100%;
+            }
+            .tres2{
+            width:33.333333333%;
+            height:inherit;
+            background-color:rgb(120, 120, 255);
+            display:inline-block;
+            float:left;
+            }
+            .tres3{
+            width:33%;
+            height:inherit;
+            background-color:rgb(136, 136, 255);
+            display:inline-block;
+            float:right;
+            }
+            .cinco1{
+            width:3%;
+            height:inherit;
+            background-color:rgb(142, 142, 255);
+            display:inline-block;
+            float:left;
+            font-size:28px;
+            text-align:center;
+            }
+            .cinco2{
+            width:4%;
+            height:inherit;
+            background-color:rgb(152, 152, 255);
+            display:inline-block;
+            float:left;
+            font-size:28px;
+            text-align:center;
+            }
+            .cinco3{
+            width:3%;
+            height:inherit;
+            background-color:rgb(162, 162, 255);
+            display:inline-block;
+            float:left;
+            font-size:28px;
+            text-align:center;
+            }
+            .cinco4{
+            width:3%;
+            height:inherit;
+            background-color:rgb(172, 172, 255);
+            display:inline-block;
+            float:right;
+            font-size:28px;
+            text-align:center;
+            }
+            .sete1{
+            width:20%;
+            height:inherit;
+            background-color:rgb(186, 186, 255);
+            display:inline-block;
+            float:right;
+            }
+            .sete2{
+            width:20%;
+            height:inherit;
+            background-color:rgb(198, 198, 255);
+            display:inline-block;
+            float:right;
+            }
+            .sete3{
+            width:20%;
+            height:inherit;
+            background-color:rgb(210, 210, 255);
+            display:inline-block;
+            float:right;
+            }
+            .sete4{
+            width:20%;left
+            display:inline-block;
+            float:right;
+            }
+            .sete5{
+            width:20%;
+            height:inherit;
+            background-color:rgb(230, 230, 255);
+            display:inline-block;
+            float:right;
+            }
+            .comentario{
+            font-family:Arial;
+            font-size:bold;
+            font-weight:10px;
+            color:rgb(255, 255, 255);
+            }
+            .p1{
+            color:white;
+            font-family:arial;
+            font-size:13px;
+            font-weight:bold;
+            text-align:center;
+            vertical-align:center;
+            }
+            .p2{
+            color:white;
+            font-family:Arial;
+            font-size:13px;
+            font-weight:bold;
+            text-align:center;
+            }
+            .p3{
+            color:white;
+            font-family:Arial;
+            font-size:13px;
+            font-weight:bold;
+            text-align:right;
+            }
+            .ptres2{
+            color:white;
+            font-family:Arial;
+            font-size:11px;
+            font-weight:bold;
+            text-align:left;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="site">
+            <div class="um">
+                <div class="um1">
+                <p class="p1">Instagram</p>
+                </div>
+                <div class="um2">
+                <p class="p2">&#9993;</p>
+                </div>
+                <div class="um3">
+                <p class="p3">&hearts;</p>
+                </div>
+                
+            </div>
+            <div class="dois">
+                <div class="dois1"></div>
+                <div class="dois2"></div>
+                <div class="dois3"></div>
+                <div class="dois4"></div>
+                <div class="dois5"></div>
+            </div>
+            <div class="tres">
+                <div class="tres1"></div>
+                <div class="tres2">
+                <p class="ptres2">
+                    paranaclube
+                </p>
+                </div>
+                <div class="tres3">
+                    .</br>.</br>.
+                </div>
+            </div>
+            <div class="quatro"></div>
+            <div class="cinco">
+                <div class="cinco1">&hearts;</div>
+                <div class="cinco2">&#9786;</div>
+                <div class="cinco3">&#10000;</div>
+                <div class="cinco4">&#9734;</div>
+            </div>
+            <div class="seis">
+            <p class="comentario">
+            @Messi
+            </p>
+            <p>
+            Ai meu cuuuuu.
+            </p>
+            </div>
+            <div class="sete">
+                <div class="sete1"></div>
+                <div class="sete2"></div>
+                <div class="sete3"></div>
+                <div class="sete4"></div>
+                <div class="sete5"></div>
+            </div>
+        </div>
+
+    </body>
+
+
+
+</html>

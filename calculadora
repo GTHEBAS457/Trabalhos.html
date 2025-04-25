@@ -1,1 +1,169 @@
 
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora2</title>
+    <style>
+      *{
+          margin: 0;
+          padding: 0;
+      }
+      .fundo{
+        background-image: url("https://c.tenor.com/89UezDgyoxQAAAAC/mario.gif");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        color: rgb(255, 255, 255);
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+      }
+      .calculadora {
+          background-color: rgb(0, 0, 0);
+          border-radius: 10px;
+          padding: 10px;
+          display: inline-block;
+      }
+      .botao {
+          width: 50px;
+          height: 50px;
+          font-size: 30px;
+          cursor: pointer;
+          margin: 3px;
+          background-image: url("https://th.bing.com/th/id/R.547d56224879047f03ae35eb85c0e6a3?rik=PhsqqBo7JcHrLQ&pid=ImgRaw&r=0");
+          border: none;
+          color: #f5efef;
+          user-select: none;
+      }
+      .botao:hover {
+          background-image: url("https://th.bing.com/th/id/R.547d56224879047f03ae35eb85c0e6a3?rik=PhsqqBo7JcHrLQ&pid=ImgRaw&r=0");
+          background-color: #f5efef;
+          color: black;
+          transition: 0.3s;
+          transform: scale(1.1);
+      }
+      .botao:active {
+          background-color: #f5efef;
+          transform: scale(0.9);
+      }
+      #resultado {
+          width: 218px;
+          background-color: #fff;
+          height: 40px;
+          margin: 5px;
+          font-size: 25px;
+          color: black;
+          text-align: right;
+          padding: 5px;
+          border-radius: 5px;
+          user-select: text;
+          overflow-x: auto;
+          white-space: nowrap;
+      }
+      table {
+          margin: 0 auto;
+          background-image: url("https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExbmxiMDQ3c3pnbWNsa29wdG9iN2kzNDY2NTVmdTl0MmRrM3U0eHJjcSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/hIzEUA4a5hGDHRgy9P/giphy.gif");
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+          background-attachment: fixed;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="fundo">
+      <div class="calculadora">
+        <p id="resultado"></p>
+        <table>
+          <tr>
+            <td><button class="botao" onclick="clearResult()">C</button></td>
+            <td><button class="botao" onclick="backspace()">&larr;</button></td>
+            <td><button class="botao" onclick="insert('/')">/</button></td>
+            <td><button class="botao" onclick="insert('*')">X</button></td>
+          </tr>
+          <tr>
+            <td><button class="botao" onclick="insert('7')">7</button></td>
+            <td><button class="botao" onclick="insert('8')">8</button></td>
+            <td><button class="botao" onclick="insert('9')">9</button></td>
+            <td><button class="botao" onclick="insert('-')">-</button></td>
+          </tr>
+          <tr>
+            <td><button class="botao" onclick="insert('4')">4</button></td>
+            <td><button class="botao" onclick="insert('5')">5</button></td>
+            <td><button class="botao" onclick="insert('6')">6</button></td>
+            <td><button class="botao" onclick="insert('+')">+</button></td>
+          </tr>
+          <tr>
+            <td><button class="botao" onclick="insert('1')">1</button></td>
+            <td><button class="botao" onclick="insert('2')">2</button></td>
+            <td><button class="botao" onclick="insert('3')">3</button></td>
+            <td rowspan="2">
+              <button class="botao" style="height: 106px" onclick="calculate()">
+                =
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td><button class="botao" onclick="insert('0')">0</button></td>
+            <td><button class="botao" onclick="insert('.')">.</button></td>
+            <td><button class="botao" onclick="insert('!')">!</button></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <script>
+      function insert(num) {
+        const resultado = document.getElementById("resultado");
+        let valor = resultado.innerHTML;
+
+        if (num === "!") {
+          // Calculate factorial of the last number in the expression
+          const match = valor.match(/(\d+)!?$/);
+          if (match) {
+            const number = parseInt(match[1]);
+            if (!isNaN(number)) {
+              const fact = fatorial(number);
+              resultado.innerHTML = valor.replace(/(\d+)!?$/, fact);
+            }
+          }
+        } else {
+          resultado.innerHTML += num;
+        }
+      }
+
+      function clearResult() {
+        document.getElementById("resultado").innerHTML = "";
+      }
+
+      function backspace() {
+        const resultado = document.getElementById("resultado");
+        resultado.innerHTML = resultado.innerHTML.slice(0, -1);
+      }
+
+      function calculate() {
+        const resultado = document.getElementById("resultado");
+        let valor = resultado.innerHTML;
+        if (valor) {
+          try {
+            valor = valor.replace(/X/g, "*");
+            resultado.innerHTML = eval(valor);
+          } catch (e) {
+            resultado.innerHTML = "Erro";
+          }
+        }
+      }
+
+      function fatorial(n) {
+        if (n < 0) return "Erro!";
+        return n === 0 || n === 1 ? 1 : n * fatorial(n - 1);
+      }
+    </script>
+  </body>
+</html>

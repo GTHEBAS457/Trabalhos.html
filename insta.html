@@ -1,310 +1,798 @@
 <!DOCTYPE html>
-<html lang="PT-BR">
-    <head>
-        <title></title>
-        <link rel="stylesheet" type="text/css" href="">
-        <meta charset="utf-8">
-        <script src="jquery.js"></script>
-        <style>
-            .site{
-            width:1000px;
-            height:700px;
-            background-color:rgb(19, 19, 255);
-            }
-            .um{
-            width:inherit;
-            height:30px;
-            background-color:rgb(38, 38, 255);
-            }
-            .dois{
-            width: 1000px;
-            height:100px;
-            background-color:rgb(58, 58, 255);
-            }
-            .tres{
-            width:inherit;
-            height:30px;
-            background-color:rgb(78, 78, 255);
-            }
-            .quatro{
-            width:inherit;
-            height:450px;
-            background-color:rgb(98, 98, 255);
-            background-image:url(https://portalplural.com.br/wp-content/uploads/2021/11/lua-astronauta-1000x450-1.png.webp);
-            }
-            .cinco{
-            width:inherit;
-            height:30px;
-            background-color:rgb(118, 118, 255);
-            }
-            .seis{
-            width:inherit;
-            height:30px;
-            background-color:rgb(138, 138, 255);
-            }
-            .sete{
-            width:inherit;
-            height:30px;
-            background-color:rgb(158, 158, 255);
-            }
-            .um1{
-            width:10%;
-            height:inherit;
-            background-color:blue;
-            display:inline-block;
-            float:left;
-            }
-            .um2{
-            width:10%;
-            height:inherit;
-            background-color:rgb(31, 31, 253);
-            display:inline-block;
-            float:right;
-            }
-            .um3{
-            width:80%;
-            height:inherit;
-            background-color:rgb(48, 48, 255);
-            display:inline-block;
-            float:right;
-            }
-            .dois1{
-            width:10%;
-            height:inherit;
-            background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTplxe6wXHQDGtPk-trn0pLfX8GDjHELSnMQ&s);
-            display:inline-block;
-            float:left;
-            border-radius:100%;
-            margin-left:1%;
-            background-size:100%;
-            }
-            .dois2{
-            width:10%;
-            height:inherit;
-            background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4ldJSZbDLpoObRR2Ans2NtYseNdWvgYeNMg&s);
-            display:inline-block;
-            float:left;
-            border-radius:100%;
-            margin-left:1%;
-            background-size:100%;
-            }
-            .dois3{
-            width:10%;
-            height:inherit;
-            background-image:url(https://i.pinimg.com/736x/84/74/61/84746141518ff08cb0498d47df8de43c.jpg);
-            display:inline-block;
-            float:left;
-            border-radius:100%;
-            margin-left:1%;
-            background-size:100%;
-            }
-            .dois4{
-            width:10%;
-            height:inherit;
-            background-image:url(https://img.cdndsgni.com/preview/10073442.jpg);
-            display:inline-block;
-            float:left;
-            border-radius:100%;
-            margin-left:1%;
-            background-size:100%;
-            }
-            .dois5{
-            width:10%;
-            height:inherit;
-            background-image:url(https://campovivo.com.br/wp-content/uploads/2019/07/WhatsApp-Image-2018-06-28-at-19.05.44.jpeg);
-            display:inline-block;
-            float:left;
-            border-radius:100%;
-            margin-left:1%;
-            background-size:100%;
-            }
-            .tres1{
-            width:3%;
-            height:inherit;
-            background-image:url(https://www.logotypes101.com/logos/733/0F78B6B24190F2478E917BA3AE277C16/parana_clube.png);
-            display:inline-block;
-            float:left;
-            border-radius:100%;
-            background-size:100%;
-            }
-            .tres2{
-            width:33.333333333%;
-            height:inherit;
-            background-color:rgb(120, 120, 255);
-            display:inline-block;
-            float:left;
-            }
-            .tres3{
-            width:33%;
-            height:inherit;
-            background-color:rgb(136, 136, 255);
-            display:inline-block;
-            float:right;
-            }
-            .cinco1{
-            width:3%;
-            height:inherit;
-            background-color:rgb(142, 142, 255);
-            display:inline-block;
-            float:left;
-            font-size:28px;
-            text-align:center;
-            }
-            .cinco2{
-            width:4%;
-            height:inherit;
-            background-color:rgb(152, 152, 255);
-            display:inline-block;
-            float:left;
-            font-size:28px;
-            text-align:center;
-            }
-            .cinco3{
-            width:3%;
-            height:inherit;
-            background-color:rgb(162, 162, 255);
-            display:inline-block;
-            float:left;
-            font-size:28px;
-            text-align:center;
-            }
-            .cinco4{
-            width:3%;
-            height:inherit;
-            background-color:rgb(172, 172, 255);
-            display:inline-block;
-            float:right;
-            font-size:28px;
-            text-align:center;
-            }
-            .sete1{
-            width:20%;
-            height:inherit;
-            background-color:rgb(186, 186, 255);
-            display:inline-block;
-            float:right;
-            }
-            .sete2{
-            width:20%;
-            height:inherit;
-            background-color:rgb(198, 198, 255);
-            display:inline-block;
-            float:right;
-            }
-            .sete3{
-            width:20%;
-            height:inherit;
-            background-color:rgb(210, 210, 255);
-            display:inline-block;
-            float:right;
-            }
-            .sete4{
-            width:20%;left
-            display:inline-block;
-            float:right;
-            }
-            .sete5{
-            width:20%;
-            height:inherit;
-            background-color:rgb(230, 230, 255);
-            display:inline-block;
-            float:right;
-            }
-            .comentario{
-            font-family:Arial;
-            font-size:bold;
-            font-weight:10px;
-            color:rgb(255, 255, 255);
-            }
-            .p1{
-            color:white;
-            font-family:arial;
-            font-size:13px;
-            font-weight:bold;
-            text-align:center;
-            vertical-align:center;
-            }
-            .p2{
-            color:white;
-            font-family:Arial;
-            font-size:13px;
-            font-weight:bold;
-            text-align:center;
-            }
-            .p3{
-            color:white;
-            font-family:Arial;
-            font-size:13px;
-            font-weight:bold;
-            text-align:right;
-            }
-            .ptres2{
-            color:white;
-            font-family:Arial;
-            font-size:11px;
-            font-weight:bold;
-            text-align:left;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="site">
-            <div class="um">
-                <div class="um1">
-                <p class="p1">Instagram</p>
-                </div>
-                <div class="um2">
-                <p class="p2">&#9993;</p>
-                </div>
-                <div class="um3">
-                <p class="p3">&hearts;</p>
-                </div>
-                
-            </div>
-            <div class="dois">
-                <div class="dois1"></div>
-                <div class="dois2"></div>
-                <div class="dois3"></div>
-                <div class="dois4"></div>
-                <div class="dois5"></div>
-            </div>
-            <div class="tres">
-                <div class="tres1"></div>
-                <div class="tres2">
-                <p class="ptres2">
-                    paranaclube
-                </p>
-                </div>
-                <div class="tres3">
-                    .</br>.</br>.
-                </div>
-            </div>
-            <div class="quatro"></div>
-            <div class="cinco">
-                <div class="cinco1">&hearts;</div>
-                <div class="cinco2">&#9786;</div>
-                <div class="cinco3">&#10000;</div>
-                <div class="cinco4">&#9734;</div>
-            </div>
-            <div class="seis">
-            <p class="comentario">
-            @Messi
-            </p>
-            <p>
-            Ai meu cuuuuu.
-            </p>
-            </div>
-            <div class="sete">
-                <div class="sete1"></div>
-                <div class="sete2"></div>
-                <div class="sete3"></div>
-                <div class="sete4"></div>
-                <div class="sete5"></div>
-            </div>
+<html class="scroll-smooth" lang="pt-BR">
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>Clone-Instagram</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;display=swap" rel="stylesheet" />
+
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+      }
+      /* Barra de rolagem de storys */
+      .scrollbar-hide::-webkit-scrollbar {
+        display: none;
+      }
+      .scrollbar-hide {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+    </style>
+    
+</head>
+<body class="bg-white text-gray-900">
+    <!-- Barra de navegação -->
+    <header class="fixed top-0 left-0 right-0 bg-white border-b border-gray-300 z-50">
+
+      <div class="max-w-5xl mx-auto flex items-center justify-between px-4 py-2">
+        <!-- Logo e nome do aplicativo -->
+        <div class="flex items-center space-x-2">
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAjNJREFUSEvF1UnITWEYB/DfhyLCRlamQiEJkSQskFJfMmS2sTEsFBmKLJTIELKyYCF9hoxRSuykJJIyJpKyYUVW5vfRe+t0Oqd7U7fvrds95x2e///5/5/nPR3aPDraHF+3AYzEVszEeGqJ/MEz3MNxvCkrUpXBBpxAL3zAA7yqkXIyJmIofmATThX3lgGm5IAvsAhvW/QosryBYZiKJ41zZYCrWIAxeN9C8LVJvr34krJdh0cpo+tYUgcQQYN9gBRHD8zDOPzCS9zNc7ezlMMzwCCMqAP4ii5sLEQPfS9iegk0jD2ddP+EwTiDUGA++tUB/MYR7Mgbgvn9zGgb7qBnZn4oV80sRDXFCCJL855/E2UPYuMB7MoHluVD8X+plMHy5NWFZOjCbHAsn0/yxXwQqwUIZjvzejxvR398KwGE1p9TOe9LvuzJayHvqiLxqgyiYbbkAwezXANT44U/xdEA2J96YHdeOIs1zQCO5S6OM1Ful7OuV0oAwTQYFyWK9xXNPChm0DA5SjCkCpOjw+emSjmM15hdMjkA+9R5EDoHi/UFtkOymTMqynQlPhbmo0znICStNDkuq/hVNVow60wV9h23cLPAvBHvMQYkkqPrAIL94lSaY1u8KopJTUj311OcSyRX1wFMSiyDRWwMg9+VZKl7jeDXEF5NyzEqJYrJxnUdBj/MksT8TzxPjdgbo7LZMd8XcQvH+macLLKo+6L9zwfnaNX13m2fzBalb76t7Rn8BcJ+cxlsKeBhAAAAAElFTkSuQmCC" />
+          <h1 class="text-1xl font-black tracking-widest font-sans select-none"> 𝓘𝓷𝓼𝓽𝓪𝓰𝓻𝓪𝓶 </h1>
         </div>
 
-    </body>
+        <div class="hidden sm:flex items-center space-x-6 text-gray-700">
 
+          <button aria-label="Home" class="hover:text-black transition">
+            <i class="fas fa-home fa-lg"> </i>
+          </button>
 
+          <button aria-label="Direct Messages" class="hover:text-black transition">
+            <i class="fas fa-paper-plane fa-lg rotate-45"> </i>
+          </button>
 
+          <button aria-label="New Post" class="hover:text-black transition">
+            <i class="fas fa-plus-square fa-lg"> </i>
+          </button>
+
+          <button aria-label="Explore" class="hover:text-black transition">
+            <i class="fas fa-compass fa-lg"> </i>
+          </button>
+
+          <button aria-label="Activity" class="hover:text-black transition">
+            <i class="fas fa-heart fa-lg"> </i>
+          </button>
+
+          <button aria-label="Profile" class="hover:text-black transition">
+            <img
+              alt="User profile picture, round avatar"
+              class="w-8 h-8 rounded-full object-cover border border-gray-300"
+              height="32"
+              src="https://storage.googleapis.com/a1aa/image/edb5f8f0-ed4c-40e6-6c2d-616e3978d3c7.jpg"
+              width="32"
+            />
+          </button>
+        </div>
+
+        <div class="sm:hidden flex items-center space-x-4">
+          <button
+            aria-label="Menu"
+            class="text-gray-700 hover:text-black transition"
+            id="mobile-menu-button">
+            <i class="fas fa-bars fa-lg"> </i>
+          </button>
+        </div>
+      </div>
+      <!-- Mobile menu -->
+      <nav
+        aria-label="Mobile Navigation"
+        class="hidden bg-white border-t border-gray-300 sm:hidden"
+        id="mobile-menu"
+      >
+        <div class="flex justify-around py-3">
+          <button
+            aria-label="Home"
+            class="hover:text-black transition text-gray-700"
+          >
+            <i class="fas fa-home fa-lg"> </i>
+          </button>
+          <button
+            aria-label="Direct Messages"
+            class="hover:text-black transition text-gray-700"
+          >
+            <i class="fas fa-paper-plane fa-lg rotate-45"> </i>
+          </button>
+          <button
+            aria-label="New Post"
+            class="hover:text-black transition text-gray-700"
+          >
+            <i class="fas fa-plus-square fa-lg"> </i>
+          </button>
+          <button
+            aria-label="Explore"
+            class="hover:text-black transition text-gray-700"
+          >
+            <i class="fas fa-compass fa-lg"> </i>
+          </button>
+          <button
+            aria-label="Activity"
+            class="hover:text-black transition text-gray-700"
+          >
+            <i class="fas fa-heart fa-lg"> </i>
+          </button>
+          <button
+            aria-label="Profile"
+            class="hover:text-black transition text-gray-700"
+          >
+            <img
+              alt="User profile picture, round avatar"
+              class="w-8 h-8 rounded-full object-cover border border-gray-300"
+              height="32"
+              src="https://th.bing.com/th/id/OIP.2nBFCZXkoANpt3SGG8qctQHaEK?rs=1&pid=ImgDetMain"
+              width="32"
+            />
+          </button>
+        </div>
+      </nav>
+    </header>
+    <main class="pt-16 max-w-5xl mx-auto px-4">
+      <!-- Stoys -->
+      <section
+        aria-label="Stories"
+        class="border border-gray-300 rounded-md mt-4 p-3 overflow-x-auto scrollbar-hide flex space-x-4"
+      >
+        <div class="flex-shrink-0 flex flex-col items-center space-y-1 w-20">
+          <div
+            class="rounded-full p-1 bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-600"
+          >
+            <img
+              alt="User 1 portrait smiling with sunlight background, circular avatar with gradient border"
+              class="w-16 h-16 rounded-full border-2 border-white object-cover"
+              height="64"
+              src="https://1.bp.blogspot.com/-GJOrtPXR_fE/Wht1wBUd01I/AAAAAAAALOk/RTJAcjq6FIgtygtqI72g0VARVwNj8U0MACLcBGAs/s1600/Formula-1-New-Logo-01.jpg"
+              width="64"
+            />
+          </div>
+          <span class="text-xs truncate w-full text-center"> f1 </span> 
+        </div>
+        <div class="flex-shrink-0 flex flex-col items-center space-y-1 w-20">
+          <div
+            class="rounded-full p-1 bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-600"
+          >
+            <img
+              alt="User 2 portrait with hat and beach background, circular avatar with gradient border"
+              class="w-16 h-16 rounded-full border-2 border-white object-cover"
+              height="64"
+              src="https://th.bing.com/th/id/R.27d617736265866ebc852a9bb5ae7f59?rik=UuwPhNKujXTj6Q&riu=http%3a%2f%2fres.cloudinary.com%2faposta10%2fimage%2fupload%2fv1671221915%2finfluenciador-da-estrelabet-diogo-defante-e-um-dos-vencedores-da-copa-foggix.png&ehk=uN2ME5v2gaYxXcjTJ7ZEHXe33gyw4rRAkrG4DwEGxXY%3d&risl=&pid=ImgRaw&r=0"
+              width="64"
+            />
+          </div>
+          <span class="text-xs truncate w-full text-center"> defante </span>
+        </div>
+        <div class="flex-shrink-0 flex flex-col items-center space-y-1 w-20">
+          <div
+            class="rounded-full p-1 bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-600"
+          >
+            <img
+              alt="User 3 portrait with glasses and city background, circular avatar with gradient border"
+              class="w-16 h-16 rounded-full border-2 border-white object-cover"
+              height="64"
+              src="https://static-cdn.jtvnw.net/jtv_user_pictures/62c899c1-fdda-4d3a-aefc-7993c41c1618-profile_image-300x300.png"
+              width="64"
+            />
+          </div>
+          <span class="text-xs truncate w-full text-center"> brino </span>
+        </div>
+        <div class="flex-shrink-0 flex flex-col items-center space-y-1 w-20">
+          <div
+            class="rounded-full p-1 bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-600"
+          >
+            <img
+              alt="User 4 portrait with headphones and studio background, circular avatar with gradient border"
+              class="w-16 h-16 rounded-full border-2 border-white object-cover"
+              height="64"
+              src="https://i.pinimg.com/originals/5f/75/62/5f7562bf0112d385699f6b1f89768958.jpg"
+              width="64"
+            />
+          </div>
+          <span class="text-xs truncate w-full text-center"> t3ddyyyy </span>
+        </div>
+        <div class="flex-shrink-0 flex flex-col items-center space-y-1 w-20">
+          <div
+            class="rounded-full p-1 bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-600"
+          >
+            <img
+              alt="User 5 portrait with smile and park background, circular avatar with gradient border"
+              class="w-16 h-16 rounded-full border-2 border-white object-cover"
+              height="64"
+              src="https://th.bing.com/th/id/OIP.4aHwH9VVuv-HSjmDKLYqSQHaHa?rs=1&pid=ImgDetMain"
+              width="64"
+            />
+          </div>
+          <span class="text-xs truncate w-full text-center"> italo__monti </span>
+        </div>
+        <div class="flex-shrink-0 flex flex-col items-center space-y-1 w-20">
+          <div
+            class="rounded-full p-1 bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-600"
+          >
+            <img
+              alt="User 6 portrait with sunset and mountains background, circular avatar with gradient border"
+              class="w-16 h-16 rounded-full border-2 border-white object-cover"
+              height="64"
+              src="https://th.bing.com/th/id/OIP.hk5OL6bDUJGxgbsgsZJSKAHaHa?rs=1&pid=ImgDetMain"
+              width="64"
+            />
+          </div>
+          <span class="text-xs truncate w-full text-center"> heyinvestidor </span>
+        </div>
+        <div class="flex-shrink-0 flex flex-col items-center space-y-1 w-20">
+          <div
+            class="rounded-full p-1 bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-600"
+          >
+            <img
+              alt="User 7 portrait with coffee and cafe background, circular avatar with gradient border"
+              class="w-16 h-16 rounded-full border-2 border-white object-cover"
+              height="64"
+              src="https://is5-ssl.mzstatic.com/image/thumb/Podcasts112/v4/51/a7/10/51a710e5-c798-c443-a878-62896ea6e430/mza_18295535982411293632.jpg/1200x1200bb.jpg"
+              width="64"
+            />
+          </div>
+          <span class="text-xs truncate w-full text-center"> flowpdc </span>
+        </div>
+        <div class="flex-shrink-0 flex flex-col items-center space-y-1 w-20">
+          <div
+            class="rounded-full p-1 bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-600"
+          >
+            <img
+              alt="User 8 portrait with smile and flowers background, circular avatar with gradient border"
+              class="w-16 h-16 rounded-full border-2 border-white object-cover"
+              height="64"
+              src="https://www.greatestphysiques.com/wp-content/uploads/2019/03/Paulo-Muzy.08.jpg"
+              width="64"
+            />
+          </div>
+          <span class="text-xs truncate w-full text-center"> paulomuzy </span>
+        </div>
+        <div class="flex-shrink-0 flex flex-col items-center space-y-1 w-20">
+          <div
+            class="rounded-full p-1 bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-600"
+          >
+            <img
+              alt="User 9 portrait with hat and sunny day background, circular avatar with gradient border"
+              class="w-16 h-16 rounded-full border-2 border-white object-cover"
+              height="64"
+              src="https://th.bing.com/th/id/OIP.k4Ar5C0YjnFSzHNkIP7iLgAAAA?rs=1&pid=ImgDetMain"
+              width="64"
+            />
+          </div>
+          <span class="text-xs truncate w-full text-center"> cheffotto </span>
+        </div>
+        <div class="flex-shrink-0 flex flex-col items-center space-y-1 w-20">
+          <div
+            class="rounded-full p-1 bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-600"
+          >
+            <img
+              alt="User 10 portrait with beach and sunset background, circular avatar with gradient border"
+              class="w-16 h-16 rounded-full border-2 border-white object-cover"
+              height="64"
+              src="https://th.bing.com/th/id/OIP.8j8LZp8RlIC-Zge4plYRDgHaFJ?rs=1&pid=ImgDetMain"
+              width="64"
+            />
+          </div>
+          <span class="text-xs truncate w-full text-center"> jazzghostoficial1 </span>
+        </div>
+      </section>
+      <!-- Posts -->
+      <section aria-label="Feed posts" class="mt-6 space-y-8">
+        <!-- Post 1 -->
+        <article class="border border-gray-300 rounded-md bg-white">
+          <header class="flex items-center px-4 py-3">
+            <img
+              alt="User 1 profile picture, round avatar with short brown hair and smiling"
+              class="w-10 h-10 rounded-full object-cover border border-gray-300"
+              height="40"
+              src="https://1.bp.blogspot.com/-GJOrtPXR_fE/Wht1wBUd01I/AAAAAAAALOk/RTJAcjq6FIgtygtqI72g0VARVwNj8U0MACLcBGAs/s1600/Formula-1-New-Logo-01.jpg"
+              width="40"
+            />
+            <div class="ml-3 flex-1">
+              <p class="font-semibold text-sm"> f1 </p>
+              <p class="text-xs text-gray-500">São Paulo, Brazil</p>
+            </div>
+            <button
+              aria-label="More options"
+              class="text-gray-600 hover:text-black transition"
+            >
+              <i class="fas fa-ellipsis-h"> </i>
+            </button>
+          </header>
+          <img
+            alt="Photo of sunset over mountains with lake reflection, warm orange and purple sky"
+            class="w-full object-cover max-h-[600px]"
+            height="600"
+            loading="lazy"
+            src="https://th.bing.com/th/id/R.7edf1fe3e816d90e5dc8ef883f519443?rik=XYwOciSmtveeFA&pid=ImgRaw&r=0"
+            width="600"
+          />
+          <div class="px-4 py-3">
+            <div class="flex items-center justify-between mb-2">
+              <div class="flex space-x-4 text-2xl text-gray-800">
+                <button
+                  aria-label="Like post"
+                  class="hover:text-red-600 transition"
+                >
+                  <i class="far fa-heart"> </i>
+                </button>
+                <button
+                  aria-label="Comment on post"
+                  class="hover:text-gray-700 transition"
+                >
+                  <i class="far fa-comment"> </i>
+                </button>
+                <button
+                  aria-label="Share post"
+                  class="hover:text-gray-700 transition"
+                >
+                  <i class="far fa-paper-plane"> </i>
+                </button>
+              </div>
+              <button
+                aria-label="Save post"
+                class="hover:text-gray-700 transition text-2xl"
+              >
+                <i class="far fa-bookmark"> </i>
+              </button>
+            </div>
+            <p class="text-sm font-semibold mb-1">372.080 curtidas</p>
+            <p class="text-sm">
+              <span class="font-semibold mr-1"> f1 </span>
+              🔥 Largada Insana! Quem vai dominar hoje? 🏁💨 #F1 #AdrenalinaPura
+            </p>
+            <button class="text-xs text-gray-500 mt-1 hover:underline">
+              Ver todos os 1.999 comentários
+            </button>
+            <p class="text-xs text-gray-400 mt-1">Há 2 horas</p>
+          </div>
+          <form
+            class="border-t border-gray-300 px-4 py-2 flex items-center space-x-3"
+          >
+            <button
+              aria-label="Add emoji"
+              class="text-2xl text-gray-500 hover:text-gray-700 transition"
+            >
+              <i class="far fa-smile"> </i>
+            </button>
+            <input
+              aria-label="Add a comment"
+              class="flex-1 text-sm focus:outline-none"
+              placeholder="Adicione um comentário..."
+              type="text"
+            />
+            <button
+              class="text-blue-500 font-semibold text-sm disabled:opacity-50"
+              disabled=""
+              type="submit"
+            >
+              Publicar
+            </button>
+          </form>
+        </article>
+        <!-- Post 2 -->
+        <article class="border border-gray-300 rounded-md bg-white">
+          <header class="flex items-center px-4 py-3">
+            <img
+              alt="User 2 profile picture, round avatar with black hair and sunglasses"
+              class="w-10 h-10 rounded-full object-cover border border-gray-300"
+              height="40"
+              src="https://th.bing.com/th/id/R.27d617736265866ebc852a9bb5ae7f59?rik=UuwPhNKujXTj6Q&riu=http%3a%2f%2fres.cloudinary.com%2faposta10%2fimage%2fupload%2fv1671221915%2finfluenciador-da-estrelabet-diogo-defante-e-um-dos-vencedores-da-copa-foggix.png&ehk=uN2ME5v2gaYxXcjTJ7ZEHXe33gyw4rRAkrG4DwEGxXY%3d&risl=&pid=ImgRaw&r=0"
+              width="40"
+            />
+            <div class="ml-3 flex-1">
+              <p class="font-semibold text-sm"> defante </p>
+              <p class="text-xs text-gray-500">Circo Voador</p>
+            </div>
+            <button
+              aria-label="More options"
+              class="text-gray-600 hover:text-black transition"
+            >
+              <i class="fas fa-ellipsis-h"> </i>
+            </button>
+          </header>
+          <img
+            alt="Photo of beach with waves and sunny sky, bright blue ocean and white sand"
+            class="w-full object-cover max-h-[600px]"
+            height="600"
+            loading="lazy"
+            src="https://th.bing.com/th/id/OIP.oVKn6J8HiaCGTnstW86UtAHaJQ?w=1080&h=1349&rs=1&pid=ImgDetMain"
+            width="600"
+          />
+          <div class="px-4 py-3">
+            <div class="flex items-center justify-between mb-2">
+              <div class="flex space-x-4 text-2xl text-gray-800">
+                <button
+                  aria-label="Like post"
+                  class="hover:text-red-600 transition"
+                >
+                  <i class="far fa-heart"> </i>
+                </button>
+                <button
+                  aria-label="Comment on post"
+                  class="hover:text-gray-700 transition"
+                >
+                  <i class="far fa-comment"> </i>
+                </button>
+                <button
+                  aria-label="Share post"
+                  class="hover:text-gray-700 transition"
+                >
+                  <i class="far fa-paper-plane"> </i>
+                </button>
+              </div>
+              <button
+                aria-label="Save post"
+                class="hover:text-gray-700 transition text-2xl"
+              >
+                <i class="far fa-bookmark"> </i>
+              </button>
+            </div>
+            <p class="text-sm font-semibold mb-1">176.150 curtidas</p>
+            <p class="text-sm">
+              <span class="font-semibold mr-1"> defante </span>
+              o diogo de 2004 jamais acreditaria se alguém dissesse q isso iria acontecer!! E o diogo de 2023 tb ainda n acredita mt q aconteceu. Circo voador lotado no dia dos pais debaixo de chuva!!! Parece nao fazer sentido vcs terem ido nessa porra, mas entendi tudo!! Foram vcs tbm q sempre assistiram meus videos escondido de gente q quer sentido pra tudo!!! Sentido?? eh bagulho q soldado fala?? sei la q porra eh essa! só sei o q tenho sentido. e é uma enorme gratidão por qm faz minha vida ter esse tal sentido. OBRIGADO!!! papai ama mt ❤️🙌
+📸 @stefflima
+            </p>
+            <button class="text-xs text-gray-500 mt-1 hover:underline">
+              Ver todos os 973 comentários
+            </button>
+            <p class="text-xs text-gray-400 mt-1">15 de agosto de 2023</p>
+          </div>
+          <form
+            class="border-t border-gray-300 px-4 py-2 flex items-center space-x-3"
+          >
+            <button
+              aria-label="Add emoji"
+              class="text-2xl text-gray-500 hover:text-gray-700 transition"
+            >
+              <i class="far fa-smile"> </i>
+            </button>
+            <input
+              aria-label="Add a comment"
+              class="flex-1 text-sm focus:outline-none"
+              placeholder="Adicione um comentário..."
+              type="text"
+            />
+            <button
+              class="text-blue-500 font-semibold text-sm disabled:opacity-50"
+              disabled=""
+              type="submit"
+            >
+              Publicar
+            </button>
+          </form>
+        </article>
+        <!-- Post 3 -->
+        <article class="border border-gray-300 rounded-md bg-white">
+          <header class="flex items-center px-4 py-3">
+            <img
+              alt="User 3 profile picture, round avatar with curly hair and smiling"
+              class="w-10 h-10 rounded-full object-cover border border-gray-300"
+              height="40"
+              src="https://static-cdn.jtvnw.net/jtv_user_pictures/62c899c1-fdda-4d3a-aefc-7993c41c1618-profile_image-300x300.png"
+            
+              width="40"
+            />
+            <div class="ml-3 flex-1">
+              <p class="font-semibold text-sm"> brino </p>
+              <p class="text-xs text-gray-500">Curitiba, Brazil</p>
+            </div>
+            <button
+              aria-label="More options"
+              class="text-gray-600 hover:text-black transition"
+            >
+              <i class="fas fa-ellipsis-h"> </i>
+            </button>
+          </header>
+          <img
+            alt="Photo of city skyline at night with lights, tall buildings and dark blue sky"
+            class="w-full object-cover max-h-[600px]"
+            height="600"
+            loading="lazy"
+            src="https://storage.googleapis.com/a1aa/image/80a4d3c8-37b6-4181-bd6b-fd35a6f022fd.jpg"
+            width="600"
+          />
+          <div class="px-4 py-3">
+            <div class="flex items-center justify-between mb-2">
+              <div class="flex space-x-4 text-2xl text-gray-800">
+                <button
+                  aria-label="Like post"
+                  class="hover:text-red-600 transition"
+                >
+                  <i class="far fa-heart"> </i>
+                </button>
+                <button
+                  aria-label="Comment on post"
+                  class="hover:text-gray-700 transition"
+                >
+                  <i class="far fa-comment"> </i>
+                </button>
+                <button
+                  aria-label="Share post"
+                  class="hover:text-gray-700 transition"
+                >
+                  <i class="far fa-paper-plane"> </i>
+                </button>
+              </div>
+              <button
+                aria-label="Save post"
+                class="hover:text-gray-700 transition text-2xl"
+              >
+                <i class="far fa-bookmark"> </i>
+              </button>
+            </div>
+            <p class="text-sm font-semibold mb-1">3,890 likes</p>
+            <p class="text-sm">
+              <span class="font-semibold mr-1"> user_three </span>
+              City lights and good vibes. #nightlife #cityscape
+            </p>
+            <button class="text-xs text-gray-500 mt-1 hover:underline">
+              Ver todos os 102 comentários
+            </button>
+            <p class="text-xs text-gray-400 mt-1">Há 1 dia</p>
+          </div>
+          <form
+            class="border-t border-gray-300 px-4 py-2 flex items-center space-x-3"
+          >
+            <button
+              aria-label="Add emoji"
+              class="text-2xl text-gray-500 hover:text-gray-700 transition"
+            >
+              <i class="far fa-smile"> </i>
+            </button>
+            <input
+              aria-label="Add a comment"
+              class="flex-1 text-sm focus:outline-none"
+              placeholder="Adicione um comentário..."
+              type="text"
+            />
+            <button
+              class="text-blue-500 font-semibold text-sm disabled:opacity-50"
+              disabled=""
+              type="submit"
+            >
+              Publicar
+            </button>
+          </form>
+        </article>
+        <!-- Post 4 -->
+        <article class="border border-gray-300 rounded-md bg-white">
+          <header class="flex items-center px-4 py-3">
+            <img
+              alt="User 4 profile picture, round avatar with short blonde hair and smiling"
+              class="w-10 h-10 rounded-full object-cover border border-gray-300"
+              height="40"
+              src="https://storage.googleapis.com/a1aa/image/9cd0db55-f938-47e5-d061-af6005fa8126.jpg"
+              width="40"
+            />
+            <div class="ml-3 flex-1">
+              <p class="font-semibold text-sm">user_four</p>
+              <p class="text-xs text-gray-500">Belo Horizonte, Brazil</p>
+            </div>
+            <button
+              aria-label="More options"
+              class="text-gray-600 hover:text-black transition"
+            >
+              <i class="fas fa-ellipsis-h"> </i>
+            </button>
+          </header>
+          <img
+            alt="Photo of coffee cup on wooden table with morning light, warm and cozy atmosphere"
+            class="w-full object-cover max-h-[600px]"
+            height="600"
+            loading="lazy"
+            src="https://storage.googleapis.com/a1aa/image/b3bc6617-af10-4323-b72c-6b8cc2b8d8b6.jpg"
+            width="600"
+          />
+          <div class="px-4 py-3">
+            <div class="flex items-center justify-between mb-2">
+              <div class="flex space-x-4 text-2xl text-gray-800">
+                <button
+                  aria-label="Like post"
+                  class="hover:text-red-600 transition"
+                >
+                  <i class="far fa-heart"> </i>
+                </button>
+                <button
+                  aria-label="Comment on post"
+                  class="hover:text-gray-700 transition"
+                >
+                  <i class="far fa-comment"> </i>
+                </button>
+                <button
+                  aria-label="Share post"
+                  class="hover:text-gray-700 transition"
+                >
+                  <i class="far fa-paper-plane"> </i>
+                </button>
+              </div>
+              <button
+                aria-label="Save post"
+                class="hover:text-gray-700 transition text-2xl"
+              >
+                <i class="far fa-bookmark"> </i>
+              </button>
+            </div>
+            <p class="text-sm font-semibold mb-1">1,102 likes</p>
+            <p class="text-sm">
+              <span class="font-semibold mr-1"> user_four </span>
+              Starting the day right with a good coffee. ☕️ #morning
+            </p>
+            <button class="text-xs text-gray-500 mt-1 hover:underline">
+              Ver todos os 30 comentários
+            </button>
+            <p class="text-xs text-gray-400 mt-1">Há 3 horas</p>
+          </div>
+          <form
+            class="border-t border-gray-300 px-4 py-2 flex items-center space-x-3"
+          >
+            <button
+              aria-label="Add emoji"
+              class="text-2xl text-gray-500 hover:text-gray-700 transition"
+            >
+              <i class="far fa-smile"> </i>
+            </button>
+            <input
+              aria-label="Add a comment"
+              class="flex-1 text-sm focus:outline-none"
+              placeholder="Adicione um comentário..."
+              type="text"
+            />
+            <button
+              class="text-blue-500 font-semibold text-sm disabled:opacity-50"
+              disabled=""
+              type="submit"
+            >
+              Publicar
+            </button>
+          </form>
+        </article>
+        <!-- Post 5 -->
+        <article class="border border-gray-300 rounded-md bg-white">
+          <header class="flex items-center px-4 py-3">
+            <img
+              alt="User 5 profile picture, round avatar with long black hair and smiling"
+              class="w-10 h-10 rounded-full object-cover border border-gray-300"
+              height="40"
+              src="https://storage.googleapis.com/a1aa/image/c40e0939-c250-45de-e5a7-0f73f9d02a2c.jpg"
+              width="40"
+            />
+            <div class="ml-3 flex-1">
+              <p class="font-semibold text-sm">user_five</p>
+              <p class="text-xs text-gray-500">Recife, Brazil</p>
+            </div>
+            <button
+              aria-label="More options"
+              class="text-gray-600 hover:text-black transition"
+            >
+              <i class="fas fa-ellipsis-h"> </i>
+            </button>
+          </header>
+          <img
+            alt="Photo of flowers in garden with sunlight, colorful and vibrant petals"
+            class="w-full object-cover max-h-[600px]"
+            height="600"
+            loading="lazy"
+            src="https://storage.googleapis.com/a1aa/image/be775cfc-2fe6-4475-421e-41e430a28ff3.jpg"
+            width="600"
+          />
+          <div class="px-4 py-3">
+            <div class="flex items-center justify-between mb-2">
+              <div class="flex space-x-4 text-2xl text-gray-800">
+                <button
+                  aria-label="Like post"
+                  class="hover:text-red-600 transition"
+                >
+                  <i class="far fa-heart"> </i>
+                </button>
+                <button
+                  aria-label="Comment on post"
+                  class="hover:text-gray-700 transition"
+                >
+                  <i class="far fa-comment"> </i>
+                </button>
+                <button
+                  aria-label="Share post"
+                  class="hover:text-gray-700 transition"
+                >
+                  <i class="far fa-paper-plane"> </i>
+                </button>
+              </div>
+              <button
+                aria-label="Save post"
+                class="hover:text-gray-700 transition text-2xl"
+              >
+                <i class="far fa-bookmark"> </i>
+              </button>
+            </div>
+            <p class="text-sm font-semibold mb-1">987 likes</p>
+            <p class="text-sm">
+              <span class="font-semibold mr-1"> user_five </span>
+              Spring is in the air! 🌸 #flowers #garden
+            </p>
+            <button class="text-xs text-gray-500 mt-1 hover:underline">
+              Ver todos os 20 comentários
+            </button>
+            <p class="text-xs text-gray-400 mt-1">Há 6 horas</p>
+          </div>
+          <form
+            class="border-t border-gray-300 px-4 py-2 flex items-center space-x-3"
+          >
+            <button
+              aria-label="Add emoji"
+              class="text-2xl text-gray-500 hover:text-gray-700 transition"
+            >
+              <i class="far fa-smile"> </i>
+            </button>
+            <input
+              aria-label="Add a comment"
+              class="flex-1 text-sm focus:outline-none"
+              placeholder="Adicione um comentário..."
+              type="text"
+            />
+            <button
+              class="text-blue-500 font-semibold text-sm disabled:opacity-50"
+              disabled=""
+              type="submit"
+            >
+              Publicar
+            </button>
+          </form>
+        </article>
+      </section>
+    </main>
+    <!-- Footer / Bottom Nav for mobile -->
+    <nav
+      aria-label="Mobile bottom navigation"
+      class="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-300 sm:hidden z-50"
+    >
+      <div class="max-w-5xl mx-auto flex justify-around py-2">
+        <button
+          aria-label="Home"
+          class="text-gray-700 hover:text-black transition text-2xl"
+        >
+          <i class="fas fa-home"> </i>
+        </button>
+        <button
+          aria-label="Search"
+          class="text-gray-700 hover:text-black transition text-2xl"
+        >
+          <i class="fas fa-search"> </i>
+        </button>
+        <button
+          aria-label="New Post"
+          class="text-gray-700 hover:text-black transition text-2xl"
+        >
+          <i class="fas fa-plus-square"> </i>
+        </button>
+        <button
+          aria-label="Activity"
+          class="text-gray-700 hover:text-black transition text-2xl"
+        >
+          <i class="fas fa-heart"> </i>
+        </button>
+        <button
+          aria-label="Profile"
+          class="text-gray-700 hover:text-black transition"
+        >
+          <img
+            alt="User profile picture, round avatar"
+            class="w-8 h-8 rounded-full object-cover border border-gray-300"
+            height="32"
+            src="https://storage.googleapis.com/a1aa/image/edb5f8f0-ed4c-40e6-6c2d-616e3978d3c7.jpg"
+            width="32"
+          />
+        </button>
+      </div>
+    </nav>
+    <script>
+      // Mobile menu toggle
+      const menuButton = document.getElementById("mobile-menu-button");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      menuButton.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script>
+  </body>
 </html>

@@ -1,1 +1,61 @@
 
+// comando // criar comentarios.
+// comentarios servem para deixar os codigos oeganizados
+
+// javascript é case sensitive (diferencial letras maiusculas de letraas minusculas)
+
+// variaveis servem para armazenar informacoes.
+// elas sao organizadas em string, int, boolean, etc.
+// comando que cria variaveis é o "let", porém é possivel tambem usar o "const".
+// para mostrar alguma coisa na tela, é usado o codigo "console.log();"
+
+// variaveis do tipo string
+let idade = "dezeseis";
+let complemento = 'de idade';
+console.log(idade+complemento);
+
+// variaveis do tipo inteiro
+let altura = 175;
+altura /= 10;
+
+console.log(altura);
+
+// variaveis do tipo boleano
+let numero1 = 10;
+let numero2 = 9;
+let numero3 = 10;
+
+console.log(numero1===numero3)
+
+// trabalhando com condicionais
+if(numero1){
+    console.log("o numero1 vale 10");
+}else{
+    console.log("o numero1 é diferente de 10");
+}
+
+// Questao1 -> Sebe-se que as pessoas abaixo de 16 anos nao podem votar, as pessoas com idade entre 16 e 18 passuem voto facultativo, as pessoas com idade entre 18 e 70 anos taabem possuem voto facultativo. Faca um codigo que diga.
+
+// codigo e = "&&"
+// codigo e = "||"
+
+let idades = 19;
+
+if(idades < 16){
+    console.log("Eleitor não pode votar");
+}else if (idades>=16 && idades <= 70){
+    console.log("Eleitor é obrigado a votar");
+}else if(idades >= 16 && idades < 18 || idades >70){
+    console.log("Eleitor possui voto facultativo");
+}
+
+// Questao2 -> Ganhar na mega sena  é o sonho de todo
+
+
+
+
+
+
+
+
+

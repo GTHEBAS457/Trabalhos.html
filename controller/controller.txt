@@ -1,4 +1,3 @@
-
 // comando // criar comentarios.
 // comentarios servem para deixar os codigos oeganizados
 
@@ -10,17 +9,20 @@
 // para mostrar alguma coisa na tela, é usado o codigo "console.log();"
 
 // variaveis do tipo string
+
 let idade = "dezeseis";
 let complemento = 'de idade';
-console.log(idade+complemento);
+console.log(idade+complemento)
 
 // variaveis do tipo inteiro
+
 let altura = 175;
 altura /= 10;
 
 console.log(altura);
 
 // variaveis do tipo boleano
+
 let numero1 = 10;
 let numero2 = 9;
 let numero3 = 10;
@@ -28,6 +30,7 @@ let numero3 = 10;
 console.log(numero1===numero3)
 
 // trabalhando com condicionais
+
 if(numero1){
     console.log("o numero1 vale 10");
 }else{
@@ -41,21 +44,85 @@ if(numero1){
 
 let idades = 19;
 
-if(idades < 16){
+if(idades < 16)
+{
     console.log("Eleitor não pode votar");
-}else if (idades>=16 && idades <= 70){
+}
+else if (idades >= 16 && idades <= 70)
+{
     console.log("Eleitor é obrigado a votar");
-}else if(idades >= 16 && idades < 18 || idades >70){
+    
+}
+else if(idades >= 16 && idades < 18 || idades >70)
+
+{
     console.log("Eleitor possui voto facultativo");
 }
 
-// Questao2 -> Ganhar na mega sena  é o sonho de todo
+// Questao2 -> Ganhar na mega sena é o sonho de todo brasileiro. Diariamente milhares de pessoas apostam sonhando com a chance de mudar de vida. Faça um codigo que verique os numeros apostados e os numeros sorteados e diga se o apostador ganhou na quadra, quina ou sena.
 
+let numsorte1 = 09;
+let numsorte2 = 31;
+let numsorte3 = 04;
+let numsorte4 = 25;
+let numsorte5 = 03;
+let numsorte6 = 26;
 
+// Declarando as variaveis dos numeros apostados
 
+let numapostado1 = 09;
+let numapostado2 = 03;
+let numapostado3 = 25;
+let numapostado4 = 31;
+let numapostado5 = 04;
+let numapostado6 = 26;
 
+// Verificação de dezena sorteada
 
+let dezena1;
+let dezena2;
+let dezena3;
+let dezena4;
+let dezena5;
+let dezena6;
 
+if(numapostado1 == numsorte1 || numapostado2 == numsorte2 || numapostado3 == numsorte3 || numapostado4 == numsorte4 || numapostado5 == numsorte5 ||numapostado6 == numsorte6)
+{
+    dezena1 = 0;
+    console.log(dezena1);
+}
 
+if(numapostado2 == numsorte1 || numapostado2 == numsorte2 || numapostado2 == numsorte3 || numapostado2 == numsorte4 || numapostado2 == numsorte5 ||numapostado2 == numsorte6)
 
+{
+    dezena2 = 0;
+    console.log(dezena2);
+}
 
+if(numapostado3 == numsorte1 || numapostado3 == numsorte2 || numapostado3 == numsorte3 || numapostado3 == numsorte4 || numapostado3 == numsorte5 ||numapostado3 == numsorte6)
+
+{
+    dezena3 = 0;
+    console.log(dezena3);
+}
+
+if(numapostado4 == numsorte1 || numapostado4 == numsorte2 || numapostado3 == numsorte3 || numapostado4 == numsorte4 || numapostado5 == numsorte5 ||numapostado6 == numsorte6)
+
+{
+    dezena4 = 0;
+    console.log(dezena4);
+}
+
+if(numapostado5 == numsorte1 || numapostado5 == numsorte2 || numapostado5 == numsorte3 || numapostado5 == numsorte4 || numapostado5 == numsorte5 ||numapostado5 == numsorte6)
+
+{
+    dezena5 = 0;
+    console.log(dezena5);
+}
+
+if(numapostado6 == numsorte1 || numapostado6 == numsorte2 || numapostado6 == numsorte3 || numapostado6 == numsorte4 || numapostado6 == numsorte5 ||numapostado6 == numsorte6)
+
+{
+    dezena6 = 0;
+    console.log(dezena6);
+}

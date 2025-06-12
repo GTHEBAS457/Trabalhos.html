@@ -86,43 +86,126 @@ let dezena4;
 let dezena5;
 let dezena6;
 
-if(numapostado1 == numsorte1 || numapostado2 == numsorte2 || numapostado3 == numsorte3 || numapostado4 == numsorte4 || numapostado5 == numsorte5 ||numapostado6 == numsorte6)
+if(numapostado1 == numsorte1 
+|| numapostado2 == numsorte2 
+|| numapostado3 == numsorte3 
+|| numapostado4 == numsorte4 
+|| numapostado5 == numsorte5 
+||numapostado6 == numsorte6)
 {
     dezena1 = 0;
     console.log(dezena1);
 }
 
-if(numapostado2 == numsorte1 || numapostado2 == numsorte2 || numapostado2 == numsorte3 || numapostado2 == numsorte4 || numapostado2 == numsorte5 ||numapostado2 == numsorte6)
+if(numapostado2 == numsorte1 
+|| numapostado2 == numsorte2 
+|| numapostado2 == numsorte3 
+|| numapostado2 == numsorte4 
+|| numapostado2 == numsorte5 
+||numapostado2 == numsorte6)
 
 {
     dezena2 = 0;
     console.log(dezena2);
 }
 
-if(numapostado3 == numsorte1 || numapostado3 == numsorte2 || numapostado3 == numsorte3 || numapostado3 == numsorte4 || numapostado3 == numsorte5 ||numapostado3 == numsorte6)
+if(numapostado3 == numsorte1 
+|| numapostado3 == numsorte2 
+|| numapostado3 == numsorte3 
+|| numapostado3 == numsorte4 
+|| numapostado3 == numsorte5 
+||numapostado3 == numsorte6)
 
 {
     dezena3 = 0;
     console.log(dezena3);
 }
 
-if(numapostado4 == numsorte1 || numapostado4 == numsorte2 || numapostado3 == numsorte3 || numapostado4 == numsorte4 || numapostado5 == numsorte5 ||numapostado6 == numsorte6)
+if(numapostado4 == numsorte1 
+|| numapostado4 == numsorte2 
+|| numapostado3 == numsorte3 
+|| numapostado4 == numsorte4 
+|| numapostado5 == numsorte5 
+||numapostado6 == numsorte6)
 
 {
     dezena4 = 0;
     console.log(dezena4);
 }
 
-if(numapostado5 == numsorte1 || numapostado5 == numsorte2 || numapostado5 == numsorte3 || numapostado5 == numsorte4 || numapostado5 == numsorte5 ||numapostado5 == numsorte6)
+if(numapostado5 == numsorte1 
+|| numapostado5 == numsorte2 
+|| numapostado5 == numsorte3 
+|| numapostado5 == numsorte4 
+|| numapostado5 == numsorte5 
+||numapostado5 == numsorte6)
 
 {
     dezena5 = 0;
     console.log(dezena5);
 }
 
-if(numapostado6 == numsorte1 || numapostado6 == numsorte2 || numapostado6 == numsorte3 || numapostado6 == numsorte4 || numapostado6 == numsorte5 ||numapostado6 == numsorte6)
+if(numapostado6 == numsorte1 
+|| numapostado6 == numsorte2 
+|| numapostado6 == numsorte3 
+|| numapostado6 == numsorte4 
+|| numapostado6 == numsorte5 
+||numapostado6 == numsorte6)
 
 {
     dezena6 = 0;
     console.log(dezena6);
 }
+
+if(dezena1 == 0 && dezena2 == 0 
+&& dezena3 == 0 && dezena4 == 0 
+&& dezena5 == 0 && dezena6 == 0)
+{
+    console.log("EU TÔ RICOOOOOOOOOOOOOOOOOOOOOO!!!");
+}
+
+else if(dezena1 != 0 && dezena2 == 0 
+&& dezena3 == 0 && dezena4 == 0 
+&& dezena5 == 0 && dezena6 == 0)
+{
+    console.log("HURUUUUL, GANHEI NA QUINA!!!");
+}
+
+else if(dezena1 == 0 && dezena2 != 0 
+&& dezena3 == 0 && dezena4 == 0 
+&& dezena5 == 0 && dezena6 == 0)
+{
+    console.log("HURUUUUL, GANHEI NA QUINA!!!");
+}
+
+else if(dezena1 == 0 && dezena2 == 0 
+&& dezena3 != 0 && dezena4 == 0 
+&& dezena5 == 0 && dezena6 == 0)
+{
+    console.log("HURUUUUL, GANHEI NA QUINA!!!");
+}
+
+
+else if(dezena1 == 0 && dezena2 == 0 
+&& dezena3 == 0 && dezena4 != 0 
+&& dezena5 == 0 && dezena6 == 0)
+{
+    console.log("HURUUUUL, GANHEI NA QUINA!!!");
+}
+
+else if(dezena1 == 0 && dezena2 == 0 
+&& dezena3 == 0 && dezena4 == 0 
+&& dezena5 != 0 && dezena6 == 0)
+{
+    console.log("HURUUUUL, GANHEI NA QUINA!!!");
+}
+
+else if(dezena1 == 0 && dezena2 == 0 
+&& dezena3 == 0 && dezena4 == 0 
+&& dezena5 == 0 && dezena6 != 0)
+{
+    console.log("HURUUUUL, GANHEI NA QUINA!!!");
+}
+
+
+

@@ -164,6 +164,11 @@ if(dezena1 == 0 && dezena2 == 0
     console.log("EU TÔ RICOOOOOOOOOOOOOOOOOOOOOO!!!");
 }
 
+
+
+
+
+
 else if(dezena1 != 0 && dezena2 == 0 
 && dezena3 == 0 && dezena4 == 0 
 && dezena5 == 0 && dezena6 == 0)
@@ -205,6 +210,126 @@ else if(dezena1 == 0 && dezena2 == 0
 && dezena5 == 0 && dezena6 != 0)
 {
     console.log("HURUUUUL, GANHEI NA QUINA!!!");
+}
+
+
+
+
+
+
+else if(dezena1 != 0 && dezena2 != 0 
+&& dezena3 == 0 && dezena4 == 0 
+&& dezena5 == 0 && dezena6 == 0)
+{
+    console.log("HURUUUUL, GANHEI NA QUADRA!!!");
+}
+
+else if(dezena1 != 0 && dezena2 == 0 
+&& dezena3 != 0 && dezena4 == 0 
+&& dezena5 == 0 && dezena6 == 0)
+{
+    console.log("HURUUUUL, GANHEI NA QUADRA!!!");
+}
+
+else if(dezena1 != 0 && dezena2 == 0 
+&& dezena3 == 0 && dezena4 != 0 
+&& dezena5 == 0 && dezena6 == 0)
+{
+    console.log("HURUUUUL, GANHEI NA QUADRA!!!");
+}
+
+
+else if(dezena1 != 0 && dezena2 == 0 
+&& dezena3 == 0 && dezena4 == 0 
+&& dezena5 != 0 && dezena6 == 0)
+{
+    console.log("HURUUUUL, GANHEI NA QUADRA!!!");
+}
+
+
+else if(dezena1 != 0 && dezena2 == 0 
+&& dezena3 == 0 && dezena4 == 0 
+&& dezena5 == 0 && dezena6 != 0)
+{
+    console.log("HURUUUUL, GANHEI NA QUADRA!!!");
+}
+
+
+else if(dezena1 == 0 && dezena2 != 0 
+&& dezena3 != 0 && dezena4 == 0 
+&& dezena5 == 0 && dezena6 == 0)
+{
+    console.log("HURUUUUL, GANHEI NA QUADRA!!!");
+}
+
+
+else if(dezena1 == 0 && dezena2 != 0 
+&& dezena3 == 0 && dezena4 != 0 
+&& dezena5 == 0 && dezena6 == 0)
+{
+    console.log("HURUUUUL, GANHEI NA QUADRA!!!");
+}
+
+
+else if(dezena1 == 0 && dezena2 != 0 
+&& dezena3 == 0 && dezena4 == 0 
+&& dezena5 != 0 && dezena6 == 0)
+{
+    console.log("HURUUUUL, GANHEI NA QUADRA!!!");
+}
+
+
+else if(dezena1 == 0 && dezena2 != 0 
+&& dezena3 == 0 && dezena4 == 0 
+&& dezena5 == 0 && dezena6 != 0)
+{
+    console.log("HURUUUUL, GANHEI NA QUADRA!!!");
+}
+
+
+else if(dezena1 == 0 && dezena2 == 0 
+&& dezena3 != 0 && dezena4 != 0 
+&& dezena5 == 0 && dezena6 == 0)
+{
+    console.log("HURUUUUL, GANHEI NA QUADRA!!!");
+}
+
+
+else if(dezena1 == 0 && dezena2 == 0 
+&& dezena3 != 0 && dezena4 == 0 
+&& dezena5 != 0 && dezena6 == 0)
+{
+    console.log("HURUUUUL, GANHEI NA QUADRA!!!");
+}
+
+else if(dezena1 == 0 && dezena2 == 0 
+&& dezena3 != 0 && dezena4 == 0 
+&& dezena5 == 0 && dezena6 != 0)
+{
+    console.log("HURUUUUL, GANHEI NA QUADRA!!!");
+}
+
+
+else if(dezena1 == 0 && dezena2 == 0 
+&& dezena3 == 0 && dezena4 != 0 
+&& dezena5 != 0 && dezena6 == 0)
+{
+    console.log("HURUUUUL, GANHEI NA QUADRA!!!");
+}
+
+else if(dezena1 == 0 && dezena2 == 0 
+&& dezena3 == 0 && dezena4 != 0 
+&& dezena5 == 0 && dezena6 != 0)
+{
+    console.log("HURUUUUL, GANHEI NA QUADRA!!!");
+}
+
+
+else if(dezena1 == 0 && dezena2 == 0 
+&& dezena3 == 0 && dezena4 == 0 
+&& dezena5 != 0 && dezena6 != 0)
+{
+    console.log("HURUUUUL, GANHEI NA QUADRA!!!");
 }
 
 

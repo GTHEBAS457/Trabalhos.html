@@ -1,2 +1,19 @@
-
-gj
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" taype="text/css" href="">
+    <title>Calculadora do Thebas</title>
+    <script src="jquery.js"></script>
+</head>
+<body>
+    <ul>
+        <li><a href="calculdora.html">Calculdora</a></li>
+        <li><a href="cores.html">Cores</a></li>
+        <li><a href="curriculo.html">Curriculo</a></li>
+        <li><a href="insta.html">Instagram</a></li>
+    </ul>
+</body>
+</html>
